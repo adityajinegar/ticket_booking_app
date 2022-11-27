@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:ticket_booking/utils/app_layout.dart';
-import 'package:ticket_booking/utils/app_styles.dart';
+
+import '../utils/app_layout.dart';
+import '../utils/app_styles.dart';
 
 class HotelScreen extends StatelessWidget {
   const HotelScreen({
@@ -15,7 +16,7 @@ class HotelScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = AppLayout.getSize(context);
     return Container(
-      height: 350,
+      height: AppLayout.getHeight(350),
       width: size.width * 0.6,
       margin: const EdgeInsets.only(right: 17, top: 5),
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 17),
@@ -33,7 +34,7 @@ class HotelScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            height: 180,
+            height: AppLayout.getHeight(180),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               color: Styles.primaryColor,
